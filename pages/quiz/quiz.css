@@ -49,6 +49,8 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
+    max-width: 1160px;
+    margin-inline: auto;
 }
 
 .assunto{
@@ -234,7 +236,7 @@ main{
 }
 
 @media(min-width: 1100px) {
-    
+
     body{
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
