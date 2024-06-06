@@ -49,7 +49,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
-    
+
 }
 
 .assunto{
@@ -59,7 +59,7 @@ header{
 }
 
 .assunto_icone{
-    
+
     width: 40px;
     height: 40px;
     padding: 5px;
@@ -69,7 +69,15 @@ header{
 .assunto_icone.html{
     background: var(--bg-html);
 }
-
+.assunto_icone.css{
+    background: var(--bg-css);
+}
+.assunto_icone.javascript{
+    background: var(--bg-javascript);
+}
+.assunto_icone.acessibilidade{
+    background: var(--bg-acessibilidade);
+}
 .assunto_icone img{
     width: 100%;
 }
@@ -142,7 +150,7 @@ main{
 
 .barra_progresso div{
     height: 100%;
-    width: 60%;
+
     background: var(--purple);
     border-radius: 999px;
 }
@@ -169,13 +177,12 @@ main{
     color: var(--primary-text-color);
     cursor: pointer;
 }
-
-.alternativas label:hover
-  & span{
-    background: var(--bg-acessibilidade);
-    color: var(--purple);
+.alternativas label:hover{
+    & span{
+        background: var(--bg-acessibilidade);
+        color: var(--purple);
+    }
 }
-
 .alternativas label:has(input:checked){
     outline: 3px solid var(--purple);
     & span{
@@ -213,10 +220,10 @@ main{
     width: 40px;
     height: 40px;
     background: var(--bg-span);
-    background: var(--bg-color);
+
     border-radius: 5px;
     color: var(--color-span);
-    color: var(--secondary-text-color);
+
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -241,6 +248,7 @@ main{
     cursor: pointer;
 }
 
+
 @media(min-width: 1100px) {
 
     body{
@@ -253,8 +261,8 @@ main{
         margin-block: 81px;
         max-width: 1160px;
         margin-inline: auto;
-
     }
+
     .assunto_icone{
         width: 56px;
         height: 56px;
@@ -265,11 +273,10 @@ main{
         font-size: 28px;
     }
 
-
     .tema{
         gap: 16px;
     }
-
+    
     .tema img{
         width: 24px;
     }
@@ -321,6 +328,7 @@ main{
     .alternativas label{
         font-size: 22px;
         padding: 18px 20px;
+        border-radius: 24px;
     }
 
     .alternativas div{
